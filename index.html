@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>연세포털서비스 - 성적조회</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .header {
+      position: fixed;
+      top: 20px;  /* 너가 바꾼 여백 */
+      left: 0;
+      right: 0;
+    }
+
+    .header img {
+      width: 100%;
+      height: auto; /* 원본 비율 유지 */
+      display: block;
+    }
+
+    .content {
+      position: absolute;
+      top: 219px; /* header 원본 높이 199 + top 여백 20 */
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      background: #fff;
+    }
+
+    .content img {
+      width: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="header.jpg" alt="연세포털서비스">
+  </div>
+  <div class="content">
+    <img src="grades.jpg" alt="성적표">
+  </div>
+</body>
+</html>
