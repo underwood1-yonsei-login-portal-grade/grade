@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>연세포털서비스 - 성적조회</title>
   <style>
-    /* 브라우저 기본 초기화 */
+    /* 초기화 */
     * {
       margin: 0;
       padding: 0;
@@ -15,30 +15,24 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
+      /* ✅ overflow: hidden 제거 → 스크롤 가능 */
     }
 
     .header {
       position: fixed;
-      top: 0; 
+      top: 0;  /* ✅ 여백 없음 */
       left: 0;
       right: 0;
     }
 
     .header img {
       width: 100%;
-      height: auto; /* 원본 비율 유지 */
+      height: auto;  /* 원본 비율 유지 */
       display: block;
     }
 
     .content {
-      position: absolute;
-      top: 165px; /* ✅ header 원본 높이 199 + top 20 */
-      bottom: 0;
-      left: 0;
-      right: 0;
-      overflow-y: scroll;
-      -webkit-overflow-scrolling: touch;
+      margin-top: 165px;  /* ✅ header 높이만큼 띄움 */
       background: #fff;
     }
 
